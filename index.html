@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#82B5E8">
+    <meta name="description" content="Repeat. Recall. Remember. Learn French vocabulary with REWORD."><title>REWORD — French Essentials</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head><body><div class="app-container">
+
+    <header class="top-header">
+        <div class="brand">
+            <h1>REWORD<span>.</span></h1>
+            <p>FRENCH ESSENTIALS</p>
+        </div>
+
+        <div class="header-decoration">✦</div>
+    </header>
+
+
+    <!-- HOME PAGE -->
+    <main id="homePage" class="page active">
+
+        <section class="welcome-section">
+            <span class="eyebrow">YOUR LANGUAGE JOURNEY</span>
+
+            <h2>Learn a little.<br>Remember a lot.</h2>
+
+            <p>
+                Build your French vocabulary one word at a time.
+                Repeat, recall, and remember.
+            </p>
+        </section>
+
+
+        <section class="section-heading">
+            <div>
+                <span class="eyebrow">START LEARNING</span>
+                <h3>Choose a category</h3>
+            </div>
+
+            <span class="category-count" id="categoryCount">05</span>
+        </section>
+
+
+        <section id="categoryList" class="category-list"></section>
+
+
+        <footer class="home-footer">
+            <span>REWORD.</span>
+            <p>Repeat. Recall. Remember.</p>
+        </footer>
+
+    </main>
+
+
+    <!-- CATEGORY PAGE -->
+    <main id="categoryPage" class="page">
+
+        <button class="back-button" onclick="goHome()">
+            <span>‹</span> Home
+        </button>
+
+        <section class="page-heading">
+            <span class="eyebrow">CATEGORY</span>
+            <h2 id="categoryTitle"></h2>
+            <p id="categoryDescription"></p>
+        </section>
+
+        <section id="vocabularyList" class="vocabulary-list"></section>
+
+    </main>
+
+
+    <!-- DETAIL PAGE -->
+    <main id="detailPage" class="page">
+
+        <button class="back-button" onclick="goCategory()">
+            <span>‹</span> Back
+        </button>
+
+        <section class="detail-card">
+
+            <div class="detail-illustration" id="detailIllustration">
+                ✨
+            </div>
+
+            <span class="eyebrow">VOCABULARY</span>
+
+            <h2 id="detailEnglish"></h2>
+
+            <div class="french-word" id="detailFrench"></div>
+
+            <div class="detail-divider"></div>
+
+            <div class="detail-information">
+                <div class="information-item">
+                    <span>PRONUNCIATION</span>
+                    <p id="detailPronunciation"></p>
+                </div>
+
+                <div class="information-item">
+                    <span>MEANING</span>
+                    <p id="detailDescription"></p>
+                </div>
+            </div>
+
+            <button class="primary-button" onclick="startPractice()">
+                Start Practicing
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- PRACTICE PAGE -->
+    <main id="practicePage" class="page">
+
+        <button class="back-button" onclick="goDetail()">
+            <span>‹</span> Back
+        </button>
+
+        <section class="practice-container">
+
+            <div class="practice-header">
+                <span class="eyebrow">RECALL PRACTICE</span>
+                <h2>Let's remember.</h2>
+                <p>Take your time. There is no rush.</p>
+            </div>
+
+
+            <div class="score-container">
+
+                <div class="score-card">
+                    <span>T</span>
+                    <strong id="trueCount">0</strong>
+                </div>
+
+                <div class="score-card">
+                    <span>F</span>
+                    <strong id="falseCount">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <span class="question-label">TRANSLATE INTO FRENCH</span>
+
+                <h2 id="practiceEnglish">Yes</h2>
+
+                <p>What is this in French?</p>
+
+                <form id="answerForm">
+
+                    <input
+                        type="text"
+                        id="answerInput"
+                        placeholder="Type in French..."
+                        autocomplete="off"
+                        autocapitalize="none"
+                        spellcheck="false"
+                    >
+
+                    <button type="submit" class="primary-button">
+                        Check Answer
+                    </button>
+
+                </form>
+
+                <div id="feedback" class="feedback" aria-live="polite"></div>
+
+            </div>
+
+            <p class="practice-note">
+                Keep practicing until you feel confident.
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
