@@ -823,3 +823,18 @@ color: #52799D;
 }
 
 }
+
+/* CUSTOM IMAGE ICONS */
+
+.category-icon,
+.detail-illustration {
+    overflow: hidden;
+}
+
+.category-icon img,
+.detail-illustration img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

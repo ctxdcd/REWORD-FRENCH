@@ -4,7 +4,7 @@ const categories = [
     id: "affirmation",
     title: "Affirmation & Negation",
     description: "Express agreement, disagreement, and uncertainty.",
-    icon: "💬",
+    image: "img/categories/affirmation.webp",
 
     words: [
         {
@@ -13,7 +13,7 @@ const categories = [
             answers: ["oui"],
             pronunciation: "wee",
             description: "Used to express agreement or affirmation.",
-            illustration: "👍"
+            image: "img/words/yes.webp"
         },
         {
             english: "No",
@@ -21,7 +21,7 @@ const categories = [
             answers: ["non"],
             pronunciation: "noh(n)",
             description: "Used to express disagreement or negation.",
-            illustration: "🙅"
+            image: "img/words/no.webp"
         },
         {
             english: "Maybe",
@@ -29,7 +29,7 @@ const categories = [
             answers: ["peut-être", "peut etre"],
             pronunciation: "puh-tetr",
             description: "Used when something is possible but uncertain.",
-            illustration: "🤔"
+            image: "img/words/maybe.webp"
         },
         {
             english: "Correct",
@@ -37,7 +37,7 @@ const categories = [
             answers: ["correct"],
             pronunciation: "koh-rekt",
             description: "Used to describe something that is right or accurate.",
-            illustration: "✅"
+            image: "img/words/correct.webp"
         },
         {
             english: "Incorrect",
@@ -45,7 +45,7 @@ const categories = [
             answers: ["incorrect"],
             pronunciation: "an-koh-rekt",
             description: "Used to describe something that is not correct.",
-            illustration: "❌"
+            image: "img/words/incorrect.webp"
         }
     ]
 },
@@ -55,7 +55,7 @@ const categories = [
     id: "greetings",
     title: "Social Greetings",
     description: "Simple expressions for everyday conversations.",
-    icon: "👋",
+    image: "img/categories/greetings.webp",
 
     words: [
         {
@@ -64,7 +64,7 @@ const categories = [
             answers: ["bonjour"],
             pronunciation: "bohn-zhoor",
             description: "A common greeting used during the day.",
-            illustration: "👋"
+            image: "img/words/hello.webp"
         },
         {
             english: "Goodbye",
@@ -72,7 +72,7 @@ const categories = [
             answers: ["au revoir"],
             pronunciation: "oh ruh-vwar",
             description: "A common expression used when leaving.",
-            illustration: "🚪"
+            image: "img/words/goodbye.webp"
         },
         {
             english: "Good morning",
@@ -80,7 +80,7 @@ const categories = [
             answers: ["bonjour"],
             pronunciation: "bohn-zhoor",
             description: "A greeting commonly used in the morning.",
-            illustration: "🌤️"
+            image: "img/words/good-morning.webp"
         },
         {
             english: "Good night",
@@ -88,7 +88,7 @@ const categories = [
             answers: ["bonne nuit"],
             pronunciation: "bun nwee",
             description: "An expression used before going to sleep.",
-            illustration: "🌙"
+            image: "img/words/good-night.webp"
         },
         {
             english: "How are you?",
@@ -96,7 +96,7 @@ const categories = [
             answers: ["comment ça va", "comment ca va"],
             pronunciation: "koh-mahn sah vah",
             description: "A casual way to ask someone how they are.",
-            illustration: "😊"
+            image: "img/words/how-are-you.webp"
         }
     ]
 },
@@ -106,7 +106,7 @@ const categories = [
     id: "politeness",
     title: "Politeness & Etiquette",
     description: "Be polite and respectful in everyday situations.",
-    icon: "🌷",
+    image: "img/categories/politeness.webp",
 
     words: [
         {
@@ -115,7 +115,7 @@ const categories = [
             answers: ["s'il vous plaît", "s'il vous plait"],
             pronunciation: "seel voo pleh",
             description: "A polite expression used when making a request.",
-            illustration: "🙏"
+            image: "img/words/please.webp"
         },
         {
             english: "Thank you",
@@ -123,7 +123,7 @@ const categories = [
             answers: ["merci"],
             pronunciation: "mehr-see",
             description: "An expression of gratitude.",
-            illustration: "💐"
+            image: "img/words/thank-you.webp"
         },
         {
             english: "You're welcome",
@@ -131,7 +131,7 @@ const categories = [
             answers: ["de rien"],
             pronunciation: "duh ree-ahn",
             description: "A common response to someone saying thank you.",
-            illustration: "🤝"
+            image: "img/words/youre-welcome.webp"
         },
         {
             english: "Excuse me",
@@ -139,7 +139,7 @@ const categories = [
             answers: ["excusez-moi", "excusez moi"],
             pronunciation: "ex-kew-zay mwah",
             description: "Used to politely get someone's attention or pass by.",
-            illustration: "🙋"
+            image: "img/words/excuse-me.webp"
         },
         {
             english: "Sorry",
@@ -147,7 +147,7 @@ const categories = [
             answers: ["désolé", "desole", "désolée", "desolee"],
             pronunciation: "day-zoh-lay",
             description: "Used to apologize or express regret.",
-            illustration: "🌧️"
+            image: "img/words/sorry.webp"
         }
     ]
 },
@@ -157,7 +157,7 @@ const categories = [
     id: "survival",
     title: "Core Needs & Survival",
     description: "Essential words for basic everyday needs.",
-    icon: "🧭",
+    image: "img/categories/survival.webp",
 
     words: [
         {
@@ -166,7 +166,7 @@ const categories = [
             answers: ["au secours", "au secours!"],
             pronunciation: "oh suh-koor",
             description: "An urgent expression used when asking for help.",
-            illustration: "🆘"
+            image: "img/words/help.webp"
         },
         {
             english: "Water",
@@ -174,7 +174,7 @@ const categories = [
             answers: ["eau"],
             pronunciation: "oh",
             description: "The French word for water.",
-            illustration: "💧"
+            image: "img/words/water.webp"
         },
         {
             english: "Food",
@@ -182,7 +182,7 @@ const categories = [
             answers: ["nourriture"],
             pronunciation: "noo-ree-toor",
             description: "The general French word for food.",
-            illustration: "🍞"
+            image: "img/words/food.webp"
         },
         {
             english: "Bathroom",
@@ -190,7 +190,7 @@ const categories = [
             answers: ["toilettes"],
             pronunciation: "twah-let",
             description: "A common word used when referring to the restroom.",
-            illustration: "🚻"
+            image: "img/words/bathroom.webp"
         },
         {
             english: "Where is...?",
@@ -198,7 +198,7 @@ const categories = [
             answers: ["où est", "ou est"],
             pronunciation: "oo eh",
             description: "Used when asking where something or someone is.",
-            illustration: "📍"
+            image: "img/words/where-is.webp"
         }
     ]
 },
@@ -208,7 +208,7 @@ const categories = [
     id: "questions",
     title: "Question Words",
     description: "Learn the basic words used to ask questions.",
-    icon: "❔",
+    image: "img/categories/questions.webp",
 
     words: [
         {
@@ -217,7 +217,7 @@ const categories = [
             answers: ["qui"],
             pronunciation: "kee",
             description: "Used when asking about a person.",
-            illustration: "👤"
+            image: "img/words/who.webp"
         },
         {
             english: "What",
@@ -225,7 +225,7 @@ const categories = [
             answers: ["quoi"],
             pronunciation: "kwah",
             description: "A question word used to ask about things or information.",
-            illustration: "❓"
+            image: "img/words/what.webp"
         },
         {
             english: "Where",
@@ -233,7 +233,7 @@ const categories = [
             answers: ["où", "ou"],
             pronunciation: "oo",
             description: "Used when asking about a location.",
-            illustration: "📍"
+            image: "img/words/where.webp"
         },
         {
             english: "When",
@@ -241,7 +241,7 @@ const categories = [
             answers: ["quand"],
             pronunciation: "kahn",
             description: "Used when asking about time.",
-            illustration: "⏰"
+            image: "img/words/when.webp"
         },
         {
             english: "Why",
@@ -249,7 +249,7 @@ const categories = [
             answers: ["pourquoi"],
             pronunciation: "poor-kwah",
             description: "Used when asking for a reason or explanation.",
-            illustration: "💭"
+            image: "img/words/why.webp"
         },
         {
             english: "How",
@@ -257,7 +257,7 @@ const categories = [
             answers: ["comment"],
             pronunciation: "koh-mahn",
             description: "Used when asking about a method or manner.",
-            illustration: "🧩"
+            image: "img/words/how.webp"
         }
     ]
 }
@@ -274,6 +274,10 @@ let incorrectCount = 0;
 
 let feedbackTimer = null;
 
+// true = keyboard boleh tetap terbuka
+// false = user sudah klik layar kosong, jangan dibuka paksa lagi
+let keepKeyboard = false;
+
 // ELEMENTS
 
 const pages = document.querySelectorAll(".page");
@@ -281,75 +285,131 @@ const pages = document.querySelectorAll(".page");
 const categoryList = document.getElementById("categoryList");
 const vocabularyList = document.getElementById("vocabularyList");
 
+const practicePage = document.getElementById("practicePage");
+
 const answerForm = document.getElementById("answerForm");
 const answerInput = document.getElementById("answerInput");
+const submitButton = answerForm.querySelector("button[type='submit']");
+
+// KEYBOARD SETUP (Android)
+
+// Tombol Enter/Send di keyboard Android
+answerInput.setAttribute("enterkeyhint", "send");
+answerInput.setAttribute("autocorrect", "off");
+
+// Tombol Check Answer tidak boleh mengambil fokus dari input,
+// sehingga keyboard tetap terbuka
+submitButton.addEventListener("mousedown", function(event) {
+    event.preventDefault();
+});
+
+// Kalau user mengetuk input lagi, keyboard boleh stay
+answerInput.addEventListener("focus", function() {
+    keepKeyboard = true;
+});
+
+// Klik di area kosong (di luar form) = tutup keyboard
+practicePage.addEventListener("click", function(event) {
+
+    if (event.target.closest("#answerForm")) return;
+
+    keepKeyboard = false;
+    answerInput.blur();
+
+});
+
+// IMAGE HELPER
+
+function createImageHTML(src, alt, size, lazy = true) {
+
+    return `
+        <img
+            src="${src}"
+            alt="${alt}"
+            width="${size}"
+            height="${size}"
+            loading="${lazy ? "lazy" : "eager"}"
+            decoding="async"
+            onerror="this.style.display='none'"
+        >
+    `;
+
+}
 
 // PAGE NAVIGATION
 
 function showPage(pageId) {
 
-pages.forEach(page => {
-    page.classList.remove("active");
-});
+    pages.forEach(page => {
+        page.classList.remove("active");
+    });
 
-document.getElementById(pageId).classList.add("active");
+    document.getElementById(pageId).classList.add("active");
 
-window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-});
+    // Keluar dari halaman practice = tutup keyboard
+    if (pageId !== "practicePage") {
+        keepKeyboard = false;
+        answerInput.blur();
+    }
+
+    // Halaman practice: scroll instan supaya layar tidak bergerak
+    // saat keyboard muncul
+    window.scrollTo({
+        top: 0,
+        behavior: pageId === "practicePage" ? "auto" : "smooth"
+    });
 
 }
 
 function goHome() {
-showPage("homePage");
+    showPage("homePage");
 }
 
 function goCategory() {
-showPage("categoryPage");
+    showPage("categoryPage");
 }
 
 function goDetail() {
-showPage("detailPage");
+    showPage("detailPage");
 }
 
 // HOME CATEGORY RENDERING
 
 function renderCategories() {
 
-categoryList.innerHTML = "";
+    categoryList.innerHTML = "";
 
-categories.forEach(category => {
+    categories.forEach(category => {
 
-    const card = document.createElement("button");
+        const card = document.createElement("button");
 
-    card.className = "category-card";
+        card.className = "category-card";
 
-    card.innerHTML = `
-        <div class="category-icon">
-            ${category.icon}
-        </div>
+        card.innerHTML = `
+            <div class="category-icon">
+                ${createImageHTML(category.image, category.title, 104)}
+            </div>
 
-        <div class="category-content">
-            <h3>${category.title}</h3>
-            <p>${category.description}</p>
-        </div>
+            <div class="category-content">
+                <h3>${category.title}</h3>
+                <p>${category.description}</p>
+            </div>
 
-        <div class="category-meta">
-            ${category.words.length} words
-        </div>
-    `;
+            <div class="category-meta">
+                ${category.words.length} words
+            </div>
+        `;
 
-    card.addEventListener("click", () => {
-        openCategory(category.id);
+        card.addEventListener("click", () => {
+            openCategory(category.id);
+        });
+
+        categoryList.appendChild(card);
+
     });
 
-    categoryList.appendChild(card);
-
-});
-
-document.getElementById("categoryCount").textContent =
-    String(categories.length).padStart(2, "0");
+    document.getElementById("categoryCount").textContent =
+        String(categories.length).padStart(2, "0");
 
 }
 
@@ -357,44 +417,44 @@ document.getElementById("categoryCount").textContent =
 
 function openCategory(categoryId) {
 
-currentCategory = categories.find(
-    category => category.id === categoryId
-);
+    currentCategory = categories.find(
+        category => category.id === categoryId
+    );
 
-if (!currentCategory) return;
+    if (!currentCategory) return;
 
-document.getElementById("categoryTitle").textContent =
-    currentCategory.title;
+    document.getElementById("categoryTitle").textContent =
+        currentCategory.title;
 
-document.getElementById("categoryDescription").textContent =
-    currentCategory.description;
+    document.getElementById("categoryDescription").textContent =
+        currentCategory.description;
 
-vocabularyList.innerHTML = "";
+    vocabularyList.innerHTML = "";
 
-currentCategory.words.forEach((word, index) => {
+    currentCategory.words.forEach((word, index) => {
 
-    const card = document.createElement("button");
+        const card = document.createElement("button");
 
-    card.className = "vocabulary-card";
+        card.className = "vocabulary-card";
 
-    card.innerHTML = `
-        <div>
-            <h3>${word.english}</h3>
-            <p>Vocabulary ${String(index + 1).padStart(2, "0")}</p>
-        </div>
+        card.innerHTML = `
+            <div>
+                <h3>${word.english}</h3>
+                <p>Vocabulary ${String(index + 1).padStart(2, "0")}</p>
+            </div>
 
-        <span>»</span>
-    `;
+            <span>»</span>
+        `;
 
-    card.addEventListener("click", () => {
-        openDetail(word);
+        card.addEventListener("click", () => {
+            openDetail(word);
+        });
+
+        vocabularyList.appendChild(card);
+
     });
 
-    vocabularyList.appendChild(card);
-
-});
-
-showPage("categoryPage");
+    showPage("categoryPage");
 
 }
 
@@ -402,24 +462,24 @@ showPage("categoryPage");
 
 function openDetail(word) {
 
-currentWord = word;
+    currentWord = word;
 
-document.getElementById("detailEnglish").textContent =
-    word.english;
+    document.getElementById("detailEnglish").textContent =
+        word.english;
 
-document.getElementById("detailFrench").textContent =
-    word.french;
+    document.getElementById("detailFrench").textContent =
+        word.french;
 
-document.getElementById("detailPronunciation").textContent =
-    word.pronunciation;
+    document.getElementById("detailPronunciation").textContent =
+        word.pronunciation;
 
-document.getElementById("detailDescription").textContent =
-    word.description;
+    document.getElementById("detailDescription").textContent =
+        word.description;
 
-document.getElementById("detailIllustration").textContent =
-    word.illustration;
+    document.getElementById("detailIllustration").innerHTML =
+        createImageHTML(word.image, word.english, 230, false);
 
-showPage("detailPage");
+    showPage("detailPage");
 
 }
 
@@ -427,32 +487,33 @@ showPage("detailPage");
 
 function startPractice() {
 
-if (!currentWord) return;
+    if (!currentWord) return;
 
-correctCount = 0;
-incorrectCount = 0;
+    correctCount = 0;
+    incorrectCount = 0;
 
-updateCounters();
+    updateCounters();
 
-document.getElementById("practiceEnglish").textContent =
-    currentWord.english;
+    document.getElementById("practiceEnglish").textContent =
+        currentWord.english;
 
-answerInput.value = "";
+    answerInput.value = "";
 
-const feedback = document.getElementById("feedback");
+    const feedback = document.getElementById("feedback");
 
-feedback.textContent = "";
-feedback.className = "feedback";
+    feedback.textContent = "";
+    feedback.className = "feedback";
 
-if (feedbackTimer) {
-    clearTimeout(feedbackTimer);
-}
+    if (feedbackTimer) {
+        clearTimeout(feedbackTimer);
+    }
 
-showPage("practicePage");
+    showPage("practicePage");
 
-setTimeout(() => {
-    answerInput.focus();
-}, 350);
+    // Fokus langsung (masih dalam tap user) supaya keyboard Android
+    // otomatis terbuka tanpa menggeser layar
+    keepKeyboard = true;
+    answerInput.focus({ preventScroll: true });
 
 }
 
@@ -460,11 +521,11 @@ setTimeout(() => {
 
 function updateCounters() {
 
-document.getElementById("trueCount").textContent =
-    correctCount;
+    document.getElementById("trueCount").textContent =
+        correctCount;
 
-document.getElementById("falseCount").textContent =
-    incorrectCount;
+    document.getElementById("falseCount").textContent =
+        incorrectCount;
 
 }
 
@@ -472,12 +533,12 @@ document.getElementById("falseCount").textContent =
 
 function normalizeAnswer(answer) {
 
-return answer
-    .trim()
-    .toLowerCase()
-    .normalize("NFC")
-    .replace(/[.!?]+$/g, "")
-    .replace(/\s+/g, " ");
+    return answer
+        .trim()
+        .toLowerCase()
+        .normalize("NFC")
+        .replace(/[.!?]+$/g, "")
+        .replace(/\s+/g, " ");
 
 }
 
@@ -485,52 +546,67 @@ return answer
 
 answerForm.addEventListener("submit", function(event) {
 
-event.preventDefault();
+    event.preventDefault();
 
-if (!currentWord) return;
+    if (!currentWord) return;
 
-const userAnswer = normalizeAnswer(answerInput.value);
+    const userAnswer = normalizeAnswer(answerInput.value);
 
-if (!userAnswer) return;
+    if (!userAnswer) {
 
-if (feedbackTimer) {
-    clearTimeout(feedbackTimer);
-}
+        if (keepKeyboard) {
+            answerInput.focus({ preventScroll: true });
+        }
 
-const acceptedAnswers = currentWord.answers.map(
-    answer => normalizeAnswer(answer)
-);
+        return;
+    }
 
-const feedback = document.getElementById("feedback");
+    if (feedbackTimer) {
+        clearTimeout(feedbackTimer);
+    }
 
-if (acceptedAnswers.includes(userAnswer)) {
+    const acceptedAnswers = currentWord.answers.map(
+        answer => normalizeAnswer(answer)
+    );
 
-    correctCount++;
+    const feedback = document.getElementById("feedback");
 
-    feedback.textContent = "Correct. Well done!";
-    feedback.className = "feedback correct";
+    if (acceptedAnswers.includes(userAnswer)) {
 
-} else {
+        correctCount++;
 
-    incorrectCount++;
+        feedback.textContent = "Correct. Well done!";
+        feedback.className = "feedback correct";
 
-    feedback.textContent = "Not quite. Try again!";
-    feedback.className = "feedback incorrect";
+    } else {
 
-}
+        incorrectCount++;
 
-updateCounters();
+        feedback.textContent = "Not quite. Try again!";
+        feedback.className = "feedback incorrect";
 
-feedbackTimer = setTimeout(() => {
+    }
 
-    answerInput.value = "";
+    updateCounters();
 
-    feedback.textContent = "";
-    feedback.className = "feedback";
+    // Pastikan keyboard tetap stay setelah submit
+    if (keepKeyboard) {
+        answerInput.focus({ preventScroll: true });
+    }
 
-    answerInput.focus();
+    feedbackTimer = setTimeout(() => {
 
-}, 800);
+        answerInput.value = "";
+
+        feedback.textContent = "";
+        feedback.className = "feedback";
+
+        // Hanya fokus lagi kalau user tidak menutup keyboard
+        if (keepKeyboard) {
+            answerInput.focus({ preventScroll: true });
+        }
+
+    }, 800);
 
 });
 
