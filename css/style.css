@@ -136,6 +136,17 @@ button {
 
     color: var(--blue-dark);
     font-size: 1.5rem;
+
+    transition: 0.2s ease;
+}
+
+.header-decoration:hover {
+    background: #D6E9FB;
+    transform: translateY(-2px);
+}
+
+.header-decoration:active {
+    transform: scale(0.94);
 }
 
 /* PAGE SYSTEM */
@@ -233,6 +244,75 @@ h3 {
     font-weight: 900;
 
     color: var(--blue-dark);
+}
+
+/* REPOSITORY CARD */
+
+.repo-card {
+    margin-top: 26px;
+    padding: 18px 20px 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 23px;
+
+    box-shadow: var(--shadow);
+}
+
+.welcome-section .repo-card .repo-text {
+    max-width: none;
+    margin-top: 4px;
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+
+    color: var(--muted);
+}
+
+.repo-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.repo-link {
+    display: grid;
+    place-items: center;
+    gap: 7px;
+
+    padding: 14px 6px;
+
+    border-radius: 16px;
+
+    background: #E8F3FE;
+
+    color: var(--blue-dark);
+
+    font-size: 0.68rem;
+    font-weight: 900;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.repo-link svg {
+    width: 26px;
+    height: 26px;
+}
+
+.repo-link:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.repo-link:active {
+    transform: scale(0.97);
 }
 
 /* CATEGORY CARDS */
@@ -530,7 +610,8 @@ h3 {
     color: var(--blue-deep);
 }
 
-.french-word {
+/* kata Inggris (di bawah kata Prancis) */
+.english-word {
     font-size: 1.3rem;
     font-weight: 900;
 
@@ -760,6 +841,123 @@ h3 {
     color: #52799D;
 }
 
+/* ABOUT MODAL */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px;
+
+    background: rgba(32, 76, 117, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.modal-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-card {
+    width: 100%;
+    max-width: 420px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 28px 24px;
+
+    background: var(--surface-solid);
+
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(32, 76, 117, 0.3);
+
+    transform: translateY(14px) scale(0.97);
+    transition: transform 0.25s ease;
+}
+
+.modal-overlay.open .modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.modal-card h2 {
+    margin: 8px 0 10px;
+
+    font-size: 2.1rem;
+    line-height: 1.1;
+
+    color: var(--blue-deep);
+}
+
+.modal-lead {
+    font-size: 0.92rem;
+    line-height: 1.7;
+
+    color: #365F84;
+}
+
+.modal-divider {
+    height: 1px;
+
+    margin: 20px 0;
+
+    background: #DCEAF7;
+}
+
+.modal-steps {
+    display: grid;
+    gap: 14px;
+
+    margin-bottom: 24px;
+}
+
+.modal-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.modal-step strong {
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 11px;
+
+    background: #E8F3FE;
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    color: var(--blue-dark);
+}
+
+.modal-step p {
+    padding-top: 6px;
+
+    font-size: 0.85rem;
+    line-height: 1.55;
+
+    color: var(--text);
+}
+
 /* RESPONSIVE */
 
 @media (min-width: 700px) {
@@ -782,6 +980,10 @@ h3 {
 
     .question-card {
         padding: 40px;
+    }
+
+    .repo-card {
+        max-width: 460px;
     }
 
 }
@@ -819,6 +1021,14 @@ h3 {
         font-size: 0.65rem;
     }
 
+    .repo-link {
+        font-size: 0.62rem;
+    }
+
+    .modal-card {
+        padding: 24px 20px;
+    }
+
 }
 
 /* CUSTOM IMAGE ICONS */
@@ -841,13 +1051,16 @@ h3 {
 .primary-button,
 .back-button,
 .category-card,
-.vocabulary-card {
+.vocabulary-card,
+.header-decoration {
     -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: none) {
 
-    .primary-button:hover {
+    .primary-button:hover,
+    .header-decoration:hover,
+    .repo-link:hover {
         transform: none;
         filter: none;
     }

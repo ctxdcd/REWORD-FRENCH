@@ -3,7 +3,9 @@ const categories = [
 {
     id: "affirmation",
     title: "Affirmation & Negation",
+    titleFr: "Affirmation et négation",
     description: "Express agreement, disagreement, and uncertainty.",
+    descriptionFr: "Exprimez l'accord, le désaccord et l'incertitude.",
     image: "img/categories/affirmation.webp",
 
     words: [
@@ -54,7 +56,9 @@ const categories = [
 {
     id: "greetings",
     title: "Social Greetings",
+    titleFr: "Salutations",
     description: "Simple expressions for everyday conversations.",
+    descriptionFr: "Des expressions simples pour les conversations de tous les jours.",
     image: "img/categories/greetings.webp",
 
     words: [
@@ -105,7 +109,9 @@ const categories = [
 {
     id: "politeness",
     title: "Politeness & Etiquette",
+    titleFr: "Politesse et savoir-vivre",
     description: "Be polite and respectful in everyday situations.",
+    descriptionFr: "Soyez poli et respectueux dans les situations de tous les jours.",
     image: "img/categories/politeness.webp",
 
     words: [
@@ -156,7 +162,9 @@ const categories = [
 {
     id: "survival",
     title: "Core Needs & Survival",
+    titleFr: "Besoins essentiels et survie",
     description: "Essential words for basic everyday needs.",
+    descriptionFr: "Les mots essentiels pour les besoins de base du quotidien.",
     image: "img/categories/survival.webp",
 
     words: [
@@ -207,7 +215,9 @@ const categories = [
 {
     id: "questions",
     title: "Question Words",
+    titleFr: "Mots interrogatifs",
     description: "Learn the basic words used to ask questions.",
+    descriptionFr: "Apprenez les mots de base pour poser des questions.",
     image: "img/categories/questions.webp",
 
     words: [
@@ -291,6 +301,10 @@ const answerForm = document.getElementById("answerForm");
 const answerInput = document.getElementById("answerInput");
 const submitButton = answerForm.querySelector("button[type='submit']");
 
+const aboutButton = document.getElementById("aboutButton");
+const aboutModal = document.getElementById("aboutModal");
+const aboutClose = document.getElementById("aboutClose");
+
 // KEYBOARD SETUP (Android)
 
 // Tombol Enter/Send di keyboard Android
@@ -315,6 +329,52 @@ practicePage.addEventListener("click", function(event) {
 
     keepKeyboard = false;
     answerInput.blur();
+
+});
+
+// ABOUT MODAL
+
+function openAbout() {
+
+    aboutModal.classList.add("open");
+    aboutModal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+
+    aboutClose.focus({ preventScroll: true });
+
+}
+
+function closeAbout() {
+
+    aboutModal.classList.remove("open");
+    aboutModal.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    aboutButton.focus({ preventScroll: true });
+
+}
+
+aboutButton.addEventListener("click", openAbout);
+
+aboutClose.addEventListener("click", closeAbout);
+
+// Klik area gelap di luar kartu = tutup
+aboutModal.addEventListener("click", function(event) {
+
+    if (event.target === aboutModal) {
+        closeAbout();
+    }
+
+});
+
+// Tombol Esc = tutup
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape" && aboutModal.classList.contains("open")) {
+        closeAbout();
+    }
 
 });
 
@@ -459,16 +519,17 @@ function openCategory(categoryId) {
 }
 
 // DETAIL PAGE
+// Prancis di atas (#detailFrench = h2), Inggris di bawah (#detailEnglish)
 
 function openDetail(word) {
 
     currentWord = word;
 
-    document.getElementById("detailEnglish").textContent =
-        word.english;
-
     document.getElementById("detailFrench").textContent =
         word.french;
+
+    document.getElementById("detailEnglish").textContent =
+        word.english;
 
     document.getElementById("detailPronunciation").textContent =
         word.pronunciation;

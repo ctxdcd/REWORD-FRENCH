@@ -26,7 +26,13 @@
             <p>FRENCH OFFICIAL</p>
         </div>
 
-        <div class="header-decoration">✦</div>
+        <button
+            type="button"
+            class="header-decoration"
+            id="aboutButton"
+            aria-label="About REWORD French"
+            aria-haspopup="dialog"
+        >✦</button>
     </header>
 
 
@@ -34,20 +40,72 @@
     <main id="homePage" class="page active">
 
         <section class="welcome-section">
-            <span class="eyebrow">YOUR LANGUAGE JOURNEY</span>
+            <span class="eyebrow">Your Language Journey</span>
 
-            <h2>Learn a little.<br>Remember a lot.</h2>
+            <h2>Learn a little<br>Remember a lot</h2>
 
             <p>
-                Build your French vocabulary one word at a time.
-                Repeat, recall, and remember.
+                Build your French vocabulary.<br>
+                Repeat, recall, remember.
             </p>
+
+            <!-- REPOSITORY CARD -->
+            <div class="repo-card">
+                <span class="eyebrow">MY OTHER PROJECTS</span>
+                <p class="repo-text">Visit my GitHub to see more repositories.</p>
+
+                <div class="repo-links">
+
+                    <a
+                        class="repo-link"
+                        href="https://github.com/USERNAME"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub profile"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+
+                    <a
+                        class="repo-link"
+                        href="https://github.com/USERNAME/REPOSITORY"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Repository"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/>
+                            <path d="M4 19.5A2 2 0 0 0 6 21.5h13V18"/>
+                        </svg>
+                        <span>Repository</span>
+                    </a>
+
+                    <a
+                        class="repo-link"
+                        href="https://USERNAME.github.io/REPOSITORY"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Live website"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span>Live Site</span>
+                    </a>
+
+                </div>
+            </div>
         </section>
 
 
         <section class="section-heading">
             <div>
-                <span class="eyebrow">START LEARNING</span>
+                <span class="eyebrow">Start</span>
                 <h3>Choose a category</h3>
             </div>
 
@@ -68,7 +126,7 @@
         </button>
 
         <section class="page-heading">
-            <span class="eyebrow">CATEGORY</span>
+            <span class="eyebrow">Category</span>
             <h2 id="categoryTitle"></h2>
             <p id="categoryDescription"></p>
         </section>
@@ -93,9 +151,10 @@
 
             <span class="eyebrow">VOCABULARY</span>
 
-            <h2 id="detailEnglish"></h2>
+            <!-- Prancis di atas, Inggris di bawah -->
+            <h2 id="detailFrench"></h2>
 
-            <div class="french-word" id="detailFrench"></div>
+            <div class="english-word" id="detailEnglish"></div>
 
             <div class="detail-divider"></div>
 
@@ -195,6 +254,55 @@
         <strong class="footer-sub">FRENCH OFFICIAL</strong>
         <p>Repeat. Recall. Remember.</p>
     </footer>
+
+</div>
+
+
+<!-- ABOUT MODAL -->
+<div class="modal-overlay" id="aboutModal" aria-hidden="true">
+
+    <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="aboutTitle"
+    >
+
+        <span class="eyebrow">ABOUT</span>
+
+        <h2 id="aboutTitle">About REWORD French</h2>
+
+        <p class="modal-lead">
+            REWORD is a simple French vocabulary trainer built around one idea:
+            Repeat. Recall. Remember.
+        </p>
+
+        <div class="modal-divider"></div>
+
+        <div class="modal-steps">
+
+            <div class="modal-step">
+                <strong>01</strong>
+                <p>Pick a category and open a word to see its French spelling, pronunciation, and meaning.</p>
+            </div>
+
+            <div class="modal-step">
+                <strong>02</strong>
+                <p>Start practicing and type the French word from memory.</p>
+            </div>
+
+            <div class="modal-step">
+                <strong>03</strong>
+                <p>Repeat until it sticks. No rush, no pressure.</p>
+            </div>
+
+        </div>
+
+        <button type="button" class="primary-button" id="aboutClose">
+            Got it
+        </button>
+
+    </div>
 
 </div>
 
