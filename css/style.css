@@ -300,9 +300,11 @@ h3 {
     -webkit-tap-highlight-color: transparent;
 }
 
-.repo-link svg {
+.repo-link .repo-icon {
+    display: block;
     width: 26px;
     height: 26px;
+    object-fit: contain;
 }
 
 .repo-link:hover {
